@@ -18,7 +18,7 @@ Business license datasets containing:
 
 1. **Data Ingestion**  
    - Collect raw datasets and store in Amazon S3.
-    ![Data Ingestion Diagram](PP1 FIG1.1 DATA INGESTION .png)
+    ![Data Ingestion Diagram](diagrams/data_ingestion.png)
 
 2. **Data Profiling**  
    - Use AWS Glue DataBrew to detect inconsistencies, missing values, and data structure issues.
