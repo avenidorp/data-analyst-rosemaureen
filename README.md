@@ -110,23 +110,23 @@ To support the end-to-end data pipeline for business license analysis, a two-lay
 
 2.2 Displays completed DataBrew profile jobs showing datasets, status, and timestamps.
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.2%20DATA%20PROFILING%20.png)
+![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.2%20DATA%20PROFILING%20.png)
 
 ---
 
 2.3 Profiling summary of the business list dataset with correlations and column stats. 
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.3%20DATA%20PROFILING%20.png)
+![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.3%20DATA%20PROFILING%20.png)
 
 ---
 2.4 Profile overview of the license dataset showing missing values and variable relationships. 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.4%20DATA%20PROFILING%20.png)
+![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.4%20DATA%20PROFILING%20.png)
 
 ---
 
 2.5 Profiling results for the location dataset highlighting missing data and correlations.
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.5%20DATA%20PROFILING%20.png)
+![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.5%20DATA%20PROFILING%20.png)
 
 ---
 
@@ -142,31 +142,31 @@ To support the end-to-end data pipeline for business license analysis, a two-lay
 
 3.1 List of recipe jobs with input data, outputs, and run status.
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.1%20DATA%20CLEANING%20.png)
+![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.1%20DATA%20CLEANING%20.png)
 
 ---
 
 3.2 S3 lifecycle rules enabled to transition data to Glacier storage.
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.2%20DATA%20CLEANING%20.png)
+![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.2%20DATA%20CLEANING%20.png)
 
 ---
 
 3.3 IIS log file showing recorded user activity on the server. 
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.3%20DATA%20CLEANING.png)
+![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.3%20DATA%20CLEANING.png)
 
 ---
 
 3.4 PowerShell command used to upload the user log file to S3.  
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.4%20DATA%20CLEANING%20.png)
+![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.4%20DATA%20CLEANING%20.png)
 
 ---
 
 3.5 Uploaded user log file successfully stored in Amazon S3.
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.5%20DATA%20CLEANING%20.png)
+![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.5%20DATA%20CLEANING%20.png)
 
 ---
 
@@ -180,7 +180,7 @@ To support the end-to-end data pipeline for business license analysis, a two-lay
 
 A Glue Data Catalog showing registered tables, enabling easy data discovery and structured querying for analytics.
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG4.1%20DATA%20CATALOGING%20.png)
+![Data Cataloging Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG4.1%20DATA%20CATALOGING%20.png)
 
 ---
 
@@ -197,30 +197,30 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
 
 5.1 Shows output folders created for each business type after summarization in S3.
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
 
 ---
 
 5.2 Displays the system-generated summary file from the Glue job execution.  
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.2%20DATA%20SUMMARIZATION-BSN%20LIST%20.png.)
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.2%20DATA%20SUMMARIZATION-BSN%20LIST%20.png.)
 
 ---
 5.3 Visual workflow of the Glue job performing extract, filter, aggregate, and load operations.
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.3%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.3%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
 
 ---
 
 5.4 Glue Data Catalog tables were created to organize summarized outputs, allowing structured queries and integration with BI tools.
   
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.10%20DATA%20SUMMARIZATION-TABLES%20IN%20GLUE%20.png)
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.10%20DATA%20SUMMARIZATION-TABLES%20IN%20GLUE%20.png)
 
 ---
   
 5.5 Application log files from Elastic Beanstalk were stored in S3 to monitor access and usage behavior, supporting ongoing operational analysis.  
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.11%20DATA%20SUMMARIZATION-BEANSTALK%20.png)
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.11%20DATA%20SUMMARIZATION-BEANSTALK%20.png)
 
 ---
 
@@ -245,11 +245,12 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
 Phase 1 successfully delivered a scalable and automated AWS-based data platform for business license analytics. By transforming raw records into structured insights, the City of Vancouver can now track licensing trends, improve transparency, and plan services more efficiently. With core infrastructure in place, the next phases can expand into predictive analytics, reporting automation, and broader departmental integration.
 
 ---
+## Course Completion Badge
 
 🎖️ Earned the **AWS Academy Cloud Foundations** badge, demonstrating foundational knowledge in AWS Cloud, Architecture, Core Services, Pricing, and Support.  
 Issued by AWS Academy on March 26, 2025.
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/AWS%20BADGE%20WITH%20SKILLS.png)
+![Course Completion Badge Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/AWS%20BADGE%20WITH%20SKILLS.png)
 
 
 ## 🔗 GitHub Pages Portfolio:
