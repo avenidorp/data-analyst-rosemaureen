@@ -1,4 +1,4 @@
-Rose Maureen Avenido
+# Rose Maureen Avenido
 
 ## Project Title:
 AWS Data Analytic Platform for the City of Vancouver (Phase 1)
