@@ -88,7 +88,7 @@ To support the end-to-end data pipeline for business license analysis, a two-lay
 
 1.3 Shows the use of AWS CLI commands within PowerShell to upload the datasets directly to S3 buckets.
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidoro/data-analyst-rosemaureen/main/PP1%20FIG1.3%20DATA%20INGESTION%20.png) 
+![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/blob/main/PP1%20FIG1.3%20DATA%20INGESTION%20.png)
 
 ---
 
