@@ -80,7 +80,7 @@ To support the end-to-end data pipeline for business license analysis, a two-lay
 
 ---
 
-1.4 Displays the `license-list.csv` upload to a similar S3 directory. 
+1.2 Displays the `license-list.csv` upload to a similar S3 directory. 
 
 ![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG1.2%20DATA%20INGESTION%20.png)
 
@@ -88,7 +88,7 @@ To support the end-to-end data pipeline for business license analysis, a two-lay
 
 1.3 Shows the use of AWS CLI commands within PowerShell to upload the datasets directly to S3 buckets.
 
-![Data Ingestion Diagram](https://github.com/avenidorp/data-analyst-rosemaureen/blob/main/PP1%20FIG1.3%20DATA%20INGESTION%20.png) 
+![Data Ingestion Diagram](https://raw.githubusercontent.com/data-analyst-rosemaureen/main/PP1%20FIG1.3%20DATA%20INGESTION%20.png) 
 
 ---
 
@@ -104,7 +104,7 @@ To support the end-to-end data pipeline for business license analysis, a two-lay
 
 2.1 List of created DataBrew projects, each linked to a dataset and recipe.
 
-![Data Ingestion Diagram](https://github.com/avenidorp/data-analyst-rosemaureen/blob/main/PP1%20FIG2.1%20DATA%20PROFILING%20.png) 
+![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.1%20DATA%20PROFILING%20.png) 
 
 ---
 
