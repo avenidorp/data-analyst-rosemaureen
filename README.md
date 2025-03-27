@@ -9,10 +9,9 @@ This project addresses the challenge of managing and analyzing large volumes of 
 
 ## Problem Statement
 
-The City of Vancouver required a cloud-native solution to analyze business license data. Existing tools lacked scalability, real-time insights, and integration across departments. Key challenges addressed:
+The City of Vancouver needs to migrate to AWS to analyze business license data. Existing tools lacked scalability, real-time insights, and integration across departments. Key challenges addressed:
 
 - Scattered data from various business license departments  
-- Manual processes leading to inconsistencies and data delays  
 - Lack of visibility for trends, compliance, and economic reporting  
 - Need for governance-ready, secure, and scalable infrastructure
 
@@ -248,6 +247,12 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
 Phase 1 successfully delivered a scalable and automated AWS-based data platform for business license analytics. By transforming raw records into structured insights, the City of Vancouver can now track licensing trends, improve transparency, and plan services more efficiently. With core infrastructure in place, the next phases can expand into predictive analytics, reporting automation, and broader departmental integration.
 
 ---
+
+🎖️ Earned the **AWS Academy Cloud Foundations** badge, demonstrating foundational knowledge in AWS Cloud, Architecture, Core Services, Pricing, and Support.  
+Issued by AWS Academy on March 26, 2025.
+
+![Data Ingestion Diagram](https://github.com/avenidorp/data-analyst-rosemaureen/blob/main/AWS%20BADGE%20WITH%20SKILLS.png)
+
 
 ## 🔗 GitHub Pages Portfolio:
 [Link to Portfolio Site](https://avenidorp.github.io/data-analyst-rosemaureen/)
