@@ -203,7 +203,7 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
 
 5.2 Displays the system-generated summary file from the Glue job execution.  
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.2%20DATA%20SUMMARIZATION-BSN%20LIST%20.png.)
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.2%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
 
 ---
 5.3 Visual workflow of the Glue job performing extract, filter, aggregate, and load operations.
