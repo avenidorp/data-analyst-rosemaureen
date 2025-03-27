@@ -1,15 +1,37 @@
-# data-analyst-rosemaureen
-# Modernizing Business License Data Management via AWS
+Rose Maureen Avenido
 
 ## Project Title:
 AWS Data Analytic Platform for the City of Vancouver (Phase 1)
 
+## Introduction
+
+This project addresses the challenge of managing and analyzing large volumes of business license data for the City of Vancouver. By leveraging Amazon Web Services (AWS), we designed a scalable and secure Data Analytics Platform (DAP) to improve decision-making, enhance service delivery, and support governance. The platform streamlines data ingestion, profiling, cleaning, cataloging, and summarization to deliver real-time, analysis-ready insights.
+
+## Problem Statement
+
+The City of Vancouver required a cloud-native solution to analyze business license data. Existing tools lacked scalability, real-time insights, and integration across departments. Key challenges addressed:
+
+- Scattered data from various business license departments  
+- Manual processes leading to inconsistencies and data delays  
+- Lack of visibility for trends, compliance, and economic reporting  
+- Need for governance-ready, secure, and scalable infrastructure
 
 ## Objective:
 To design and implement a scalable, cost-efficient AWS-based Data Analytics Platform (DAP) for the City of Vancouver to manage and analyze business license data for 2024.
 
+## Tools and Technologies:
+
+Key AWS services and tools used in this implementation:
+
+- Amazon S3 – Scalable storage for raw and processed datasets  
+- AWS Glue – Data transformation, cleaning, and job orchestration  
+- AWS Glue DataBrew – No-code profiling and cleaning  
+- Amazon Athena – Serverless SQL querying on S3-stored data  
+- Amazon EC2 – Compute environment for workload execution  
+- AWS Elastic Beanstal* – Hosting for frontend log and data visualization apps  
+
 ## Dataset:
-Business license datasets containing:
+Business license 2024 datasets containing:
 - Business categories
 - License types
 - Geographic information
@@ -31,13 +53,8 @@ Business license datasets containing:
 
 5. **Data Summarization**  
    - Aggregate key metrics (e.g., licenses issued by type, revenue, region) to extract insights.
-
-## Tools and Technologies:
-- AWS S3
-- AWS Glue & Glue DataBrew
-- Amazon Athena
-- Amazon EC2
-- Amazon Cloudwatch
+  
+---
 
 ## Project Deliverables
 
@@ -48,7 +65,7 @@ To support the end-to-end data pipeline for business license analysis, a two-lay
 ![DAP System Architecture diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20DAP%201-2.png)
 ![DAP System Architecture diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20DAP%202-2.2.png)
 
-### Implementation Summary
+### Step by Step Implementation:
 
 ## 1. Data Ingestion
 
@@ -210,8 +227,27 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
 
 ---
 
-## Conclusion:
-This Phase 1 implementation showcases how cloud-based analytics infrastructure can empower municipalities to manage business data efficiently, supporting real-time insights and better governance.
+## 🚧 Challenges Faced & Solutions
+
+- **Handling complex datasets**  
+  → Broke down ingestion and processing into modular stages
+
+- **Data quality issues**  
+  → Used DataBrew profiling to flag nulls, duplicates, and type mismatches
+
+- **Monitoring and cost control**  
+  → Used S3 lifecycle policies and logging for cleanup and visibility
+
+- **Secure access**  
+  → Applied IAM role policies across Glue, S3, and EC2 environments
+
+---
+
+## Conclusion
+
+Phase 1 successfully delivered a scalable and automated AWS-based data platform for business license analytics. By transforming raw records into structured insights, the City of Vancouver can now track licensing trends, improve transparency, and plan services more efficiently. With core infrastructure in place, the next phases can expand into predictive analytics, reporting automation, and broader departmental integration.
+
+---
 
 ## 🔗 GitHub Pages Portfolio:
 [Link to Portfolio Site](https://avenidorp.github.io/data-analyst-rosemaureen/)
