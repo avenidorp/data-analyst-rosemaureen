@@ -332,7 +332,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 ---
 
-## 📊 DAP Architecture Alignment (Phase 1 & 2 Combined)
+## DAP Architecture Alignment (Phase 1 & 2 Combined)
 
 | Phase   | Focus Areas                                  | AWS Services                           | Aligned Pillars                                   |
 |---------|----------------------------------------------|----------------------------------------|--------------------------------------------------|
@@ -341,7 +341,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 ---
 
-## 🔍 Evaluation Highlights
+## 🔍 Evaluation Highlights:
 
 ### ✅ Key Accomplishments
 
@@ -350,7 +350,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 - Established data quality checkpoints and routing logic
 - Enabled real-time monitoring with alerting for proactive issue management  
 
-### ⚠️ Areas for improvement:
+### ⚠️ Areas for improvement
 - Refine IAM policies for more granular access control  
 - Implement schema evolution and disaster recovery playbooks  
 - Add documentation for Glue transformations and job parameters  
