@@ -76,19 +76,19 @@ Integrated view of data ingestion, enrichment, and transformation processes, wit
 
 1.1 AWS CLI commands within PowerShell to upload the datasets directly to S3 buckets.
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG1.3%20DATA%20INGESTION%20.png)
+ ![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG1.3%20DATA%20INGESTION%20.png)
 
 ---
 
 1.2 Successful upload of `business-list.csv` to the S3 bucket.
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG1.1%20DATA%20INGESTION%20.png)
+ ![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG1.1%20DATA%20INGESTION%20.png)
 
 ---
 
 1.3 Displays the `license-list.csv` upload to a similar S3 directory. 
 
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG1.2%20DATA%20INGESTION%20.png)
+ ![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG1.2%20DATA%20INGESTION%20.png)
 
 ---
 
@@ -104,29 +104,29 @@ Integrated view of data ingestion, enrichment, and transformation processes, wit
 
 2.1 List of created DataBrew projects, each linked to a dataset and recipe.
 
-![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.1%20DATA%20PROFILING%20.png) 
+ ![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.1%20DATA%20PROFILING%20.png) 
 
 ---
 
 2.2 Successful execution of AWS Glue DataBrew profile jobs for Business Licenses 2024 datasets (bus-lst, lic-lst, and loc-lst).
 
-![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.2%20DATA%20PROFILING%20.png)
+ ![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.2%20DATA%20PROFILING%20.png)
 
 ---
 
 2.3 Profiling summary of the business list dataset with correlations and column stats. 
 
-![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.3%20DATA%20PROFILING%20.png)
+ ![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.3%20DATA%20PROFILING%20.png)
 
 ---
 2.4 Profile overview of the license dataset showing missing values and variable relationships. 
-![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.4%20DATA%20PROFILING%20.png)
+ ![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.4%20DATA%20PROFILING%20.png)
 
 ---
 
 2.5 Profiling results for the location dataset highlighting missing data and correlations.
 
-![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.5%20DATA%20PROFILING%20.png)
+ ![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.5%20DATA%20PROFILING%20.png)
 
 ---
 
@@ -142,31 +142,31 @@ Integrated view of data ingestion, enrichment, and transformation processes, wit
 
 3.1 Successful execution of AWS Glue DataBrew recipe jobs for transforming Business Licenses 2024 datasets.
 
-![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.1%20DATA%20CLEANING%20.png)
+ ![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.1%20DATA%20CLEANING%20.png)
 
 ---
 
 3.2 S3 lifecycle rules enabled to transition data to Glacier storage, reducing costs while preserving long-term data retention.
 
-![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.2%20DATA%20CLEANING%20.png)
+ ![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.2%20DATA%20CLEANING%20.png)
 
 ---
 
 3.3 IIS log file generated on EC2 instance capturing web access activity, useful for monitoring usage patterns and detecting potential security issues.
 
-![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.3%20DATA%20CLEANING.png)
+ ![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.3%20DATA%20CLEANING.png)
 
 ---
 
 3.4 PowerShell command used to upload the user log file to S3.  
 
-![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.4%20DATA%20CLEANING%20.png)
+ ![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.4%20DATA%20CLEANING%20.png)
 
 ---
 
 3.5 Uploaded user log file successfully stored in Amazon S3.
 
-![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.5%20DATA%20CLEANING%20.png)
+ ![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.5%20DATA%20CLEANING%20.png)
 
 ---
 
@@ -180,7 +180,7 @@ Integrated view of data ingestion, enrichment, and transformation processes, wit
 
 A Glue Data Catalog showing registered tables, enabling easy data discovery and structured querying for analytics.
 
-![Data Cataloging Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG4.1%20DATA%20CATALOGING%20.png)
+ ![Data Cataloging Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG4.1%20DATA%20CATALOGING%20.png)
 
 ---
 
@@ -197,30 +197,30 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
 
 5.1 Shows output folders created for each business type after summarization in S3.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+ ![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
 
 ---
 
 5.2 Displays the system-generated summary file from the Glue job execution.  
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.2%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+ ![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.2%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
 
 ---
 5.3 Visual workflow of the Glue job performing extract, filter, aggregate, and load operations.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.3%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+ ![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.3%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
 
 ---
 
 5.4 Glue Data Catalog tables were created to organize summarized outputs, allowing structured queries and integration with reporting and analytics platforms.
   
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.10%20DATA%20SUMMARIZATION-TABLES%20IN%20GLUE%20.png)
+ ![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.10%20DATA%20SUMMARIZATION-TABLES%20IN%20GLUE%20.png)
 
 ---
   
 5.5 Application log files from Elastic Beanstalk were stored in S3 to monitor access and usage behavior, supporting ongoing operational analysis.  
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.11%20DATA%20SUMMARIZATION-BEANSTALK%20.png)
+ ![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.11%20DATA%20SUMMARIZATION-BEANSTALK%20.png)
 
 ---
 
@@ -274,7 +274,7 @@ To strengthen the existing AWS-based platform by adding analytics, encryption, g
 
 ## Phase 2 – Methodology (cont.phase 1)
 
-6. **Data Analysis** – Use AWS Glue DataBrew to clean and standardize datasets, then execute SQL queries in Amazon Athena to uncover trends (e.g., employee count, business types, monthly growth).
+6. **Data Analysis** – Utilized AWS Glue DataBrew to clean and standardize datasets, then execute SQL queries in Amazon Athena to uncover trends (e.g., employee count, business types, monthly growth).
 
 7. **Data Security** – Apply AWS KMS encryption for all data stored in Amazon S3, enable bucket versioning, and manage access using IAM policies to ensure confidentiality and resilience.
 
@@ -309,37 +309,37 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 6.1 Recipe jobs in AWS Glue DataBrew were successfully run to clean and prepare datasets for analysis.
 
 
-![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.1%20D-ANALYSIS.png)
+ ![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.1%20D-ANALYSIS.png)
 
 ---
 
 6.2 Cleaned output from Glue jobs is stored in Amazon S3 in Parquet format, ready for querying.
 
-![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.2%20D-ANALYSIS.png)
+ ![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.2%20D-ANALYSIS.png)
 
 ---
 
 6.3 A CSV output of cleaned user data is stored in a separate S3 folder for further analysis.
 
-![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.3%20D-ANALYSIS.png)
+ ![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.3%20D-ANALYSIS.png)
 
 ---
 
 6.4 Athena query calculates Business Question 1: Retrieve the average number of employees across all businesses.
 
-![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.4%20D-ANALYSIS.png)
+ ![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.4%20D-ANALYSIS.png)
 
 ---
 
 6.5 Athena query answers Business Question 2: Compute the overall average number of employees across all businesses.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.5%20D-ANALYSIS.png)
+ ![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.5%20D-ANALYSIS.png)
 
 ---
 
 6.6 Athena query answers Business Question 3: Display the average number of employees by city for comparison.
 
-![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.6%20D-ANALYSIS.png)
+ ![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.6%20D-ANALYSIS.png)
 
 ---
 
@@ -352,27 +352,27 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 7.1 Customer-managed KMS key created to encrypt sensitive business license data across AWS services.
 
-![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.1%20D-SECURITY.png)
+ ![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.1%20D-SECURITY.png)
 
 ---
 
 7.2 S3 raw bucket configured with Customer-managed KMS key encryption to protect stored data from unauthorized access.
 
-![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.2%20D-SECURITY.png)
+ ![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.2%20D-SECURITY.png)
 
 ---
 
 7.3 Raw bucket versioning enabled to preserve historical data and support recovery from unintended changes.
 
-![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.3%20D-ANALYSIS.png)
+ ![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.3%20D-ANALYSIS.png)
 
 ---
 
 7.4 Replication set up enabled in raw bucket to automatically duplicate data for durability and disaster recovery.
 
-![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.3%20D-SECURITY.png)
+ ![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.3%20D-SECURITY.png)
 
-The same process is repeated for curated and trasnsformed buckets.
+The same process is repeated for curated and transformed buckets.
 
 ---
 
@@ -386,19 +386,19 @@ The same process is repeated for curated and trasnsformed buckets.
 
 8.1 High-quality records were routed to the “Passed” folder after meeting data validation rules.
 
-![Data Governance Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.1%20D-GOVERN.png)
+ ![Data Governance Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.1%20D-GOVERN.png)
 
 ---
 
 8.2 Records that failed quality checks were stored in the “Failed” folder for audit transparency.
 
-![Data Governance Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.2%20D-GOVERN.png)
+ ![Data Governance Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.2%20D-GOVERN.png)
 
 ---
 
 8.3 ETL workflow uses conditional routing to separate valid and invalid records before final loading.
 
-![Data Governance Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.3%20D-GOVERN.png)
+ ![Data Governance Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.3%20D-GOVERN.png)
 
 ---
 
@@ -411,11 +411,13 @@ The same process is repeated for curated and trasnsformed buckets.
 
 9.1 CloudWatch dashboard monitors S3 bucket size and resource usage to support performance tracking and capacity planning.
 
-![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
+ ![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
+
+ ---
 
 9.2 CloudTrail logging enabled to track user activity and maintain audit trails for security and compliance.
 
-![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
+ ![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
 
 ---
 
