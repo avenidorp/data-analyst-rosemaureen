@@ -1,4 +1,4 @@
-# Project Title: AWS Data Analytic Platform for the City of Vancouver (Phase 1)
+# Project 1 Title: AWS Data Analytic Platform for the City of Vancouver (Phase 1)
 
 ## Introduction
 
@@ -245,6 +245,108 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
 Phase 1 successfully delivered a scalable and automated AWS-based data platform for business license analytics. With successful transformation of raw records into structured insights, the City of Vancouver can now track licensing trends and plan services more efficiently. With core infrastructure in place, the next phases is to safeguard data and strengthen system integrity to ensure the platform remains reliable, compliant, and prepared for future growth.
 
 ---
+
+# Project 2 Title: AWS Data Analytics Platform for the City of Vancouver (Phase 2)
+
+## Introduction
+
+Phase 2 builds on the foundation of the City of Vancouver’s AWS Data Analytics Platform by adding advanced capabilities in data analysis, security, governance, and monitoring. These improvements make the platform more secure, reliable, and efficient, helping the city manage business license data with greater accuracy, transparency, and speed. The system is now aligned with key AWS Well-Architected principles to support data-driven decisions and long-term performance.
+
+---
+
+## Objective
+
+To strengthen the existing AWS-based platform by adding analytics, encryption, governance, and monitoring features—allowing the City of Vancouver to securely manage and analyze business license data while ensuring data quality, performance, and visibility.
+
+---
+
+## Tools and Technologies Used
+
+- **Amazon S3** – Tiered data storage for raw, cleaned, and summarized datasets  
+- **AWS Glue & DataBrew** – ETL pipeline creation, cleaning logic, and profiling  
+- **Amazon Athena** – Serverless querying of structured data  
+- **AWS CloudWatch** – Real-time performance monitoring and alerting  
+- **AWS CloudTrail** – User activity and audit logging  
+- **AWS KMS** – Managed encryption key service for S3 and metadata  
+- **AWS IAM** – Secure access management and policy enforcement  
+
+---
+
+## Phase 2 – Methodology
+
+This phase was executed through four key stages, continuing from Phase 1. Below is a step-by-step breakdown of activities and improvements introduced.
+
+---
+
+### **Step 5: Data Analysis**
+
+- Cleaned and structured the 2024 business license data using **DataBrew** recipes.
+- Executed multiple SQL queries in **Amazon Athena** to uncover:
+  - Total and average number of employees per business type
+  - Top business sectors by license count
+  - Trends in new license issuances over time
+- Provided aggregated views that support compliance reporting, operational planning, and economic assessments.
+
+---
+
+### **Step 6: Data Security**
+
+- Activated **KMS encryption** for all S3 buckets storing raw and transformed data.
+- Enforced **S3 bucket versioning** to preserve data history and recovery options.
+- Established **IAM roles and permissions** for secure access between Glue jobs, Athena, and user groups.
+- Created security controls to prevent unauthorized data manipulation, ensuring public trust.
+
+---
+
+### **Step 7: Data Governance**
+
+- Implemented ETL checkpoints that filter and route high-quality data to “Passed” zones in S3.
+- Used **AWS Glue** to validate data types, null counts, uniqueness, and freshness.
+- Created dynamic **partitioned tables** in AWS Glue Data Catalog for query optimization.
+- Ensured repeatability and transparency in data validation for audit-readiness and compliance.
+
+---
+
+### **Step 8: Data Monitoring**
+
+- Deployed **CloudWatch dashboards** to monitor Glue job metrics and S3 activity.
+- Configured **CloudWatch Alarms** with SNS to alert stakeholders of resource thresholds (e.g., storage spikes, job failures).
+- Enabled **AWS CloudTrail** for full visibility into user interactions and access events.
+- Supported continuous performance tuning and early detection of operational issues.
+
+---
+
+## 📊 DAP Architecture Alignment (Phase 1 & 2 Combined)
+
+| Phase   | Focus Areas                                  | AWS Services                           | Aligned Pillars                                   |
+|---------|----------------------------------------------|----------------------------------------|--------------------------------------------------|
+| Phase 1 | Ingestion, Profiling, Cleaning, Cataloging, Summarization | EC2, S3, Glue, DataBrew, Athena        | Operational Excellence, Cost Optimization        |
+| Phase 2 | Analysis, Security, Governance, Monitoring   | KMS, IAM, CloudTrail, CloudWatch       | Security, Reliability, Performance Efficiency     |
+
+---
+
+## 🔍 Evaluation Highlights
+
+## ✅ Key Accomplishments
+
+- Delivered deeper analytical insights using Athena and DataBrew
+- Strengthened data protection with encryption and access controls
+- Established data quality checkpoints and routing logic
+- Enabled real-time monitoring with alerting for proactive issue management  
+
+## ⚠️ Areas for improvement:
+- Refine IAM policies for more granular access control  
+- Implement schema evolution and disaster recovery playbooks  
+- Add documentation for Glue transformations and job parameters  
+
+---
+
+## Conclusion
+
+Phase 2 significantly enhances the City of Vancouver’s AWS Data Analytics Platform by introducing intelligence, automation, and governance. These upgrades not only ensure data is trustworthy and secure but also enable real-time visibility and performance tracking. The resulting architecture is agile, policy-driven, and optimized for growth—empowering the city to make informed decisions and uphold transparency in managing business license operations.
+
+---
+
 ## Course Completion Badge
 
 🎖️ Earned the **AWS Academy Cloud Foundations** badge, demonstrating foundational knowledge in AWS Cloud, Architecture, Core Services, Pricing, and Support.  
