@@ -2,12 +2,12 @@
 
 ## Introduction
 
-This project outlines the design and implementation of a Data Analytics Platform (DAP) that will allow the City of Vancouver to analyze and manage business license data efficiently. The platform streamlines data ingestion, profiling, cleaning, cataloging, and summarization to deliver real-time, analysis-ready insight. The estimated monthly cost of running this platform on AWS was also computed to ensure financial feasibility and sustainability. 
+This project presents a Data Analytics Platform (DAP) built for the City of Vancouver to manage and analyze business license data efficiently. It covers key steps like data ingestion, profiling, cleaning, cataloging, and summarization to produce real-time insights. The monthly AWS cost was also estimated to ensure the solution is feasible and sustainable.
 
 
 ## Problem Statement
 
-The City of Vancouver needs to migrate to AWS, a scalable, secure, and cost-efficient cloud solution to manage and analyze its growing business license data, replacing outdated systems that limit performance, data quality, and decision-making. Key challenges addressed:
+The City of Vancouver needs to move to AWS to replace outdated systems and better manage its growing business license data. AWS offers a scalable, secure, and cost-effective solution that improves performance, data quality, and decision-making. Key challenges addressed:
 
 - Scattered data from various business license departments  
 - Lack of visibility for trends, compliance, and economic reporting  
