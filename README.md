@@ -379,9 +379,9 @@ The same process is repeated for curated and transformed buckets.
 ### 8. Data Governance
 
 - Implemented ETL checkpoints to separate records based on quality.
-- Used AWS Glue to check for completeness, uniqueness, and freshness.
+- Used **AWS Glue** to check for completeness, uniqueness, and freshness.
 - Routed valid records to a “Passed” S3 folder and failed ones to a “Failed” folder.
-- Organized clean data into partitioned tables in AWS Glue Data Catalog for faster querying.
+- Organized clean data into partitioned tables in **AWS Glue Data Catalog** for faster querying.
 - Ensured consistent and transparent validation for audit and compliance readiness.
 
 8.1 High-quality records were routed to the “Passed” folder after meeting data validation rules.
@@ -417,7 +417,7 @@ The same process is repeated for curated and transformed buckets.
 
 9.2 CloudTrail logging enabled to track user activity and maintain audit trails for security and compliance.
 
- ![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
+ ![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.2%20D-MONITOR.png)
 
 ---
 
