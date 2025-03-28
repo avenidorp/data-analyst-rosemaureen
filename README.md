@@ -364,13 +364,13 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 7.3 Raw bucket versioning enabled to preserve historical data and support recovery from unintended changes.
 
- ![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.2%20D-SECURITY.png)
+ ![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.3%20D-SECURITY.png)
 
 ---
 
 7.4 Replication set up enabled in raw bucket to automatically duplicate data for durability and disaster recovery.
 
- ![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.3%20D-SECURITY.png)
+ ![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.4%20D-SECURITY.png)
 
 The same process is repeated for curated and transformed buckets.
 
@@ -411,13 +411,13 @@ The same process is repeated for curated and transformed buckets.
 
 9.1 CloudWatch dashboard monitors S3 bucket size and resource usage to support performance tracking and capacity planning.
 
- ![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
+![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
 
  ---
 
 9.2 CloudTrail logging enabled to track user activity and maintain audit trails for security and compliance.
 
- ![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.2%20D-MONITOR.png)
+![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.2%20D-MONITOR.png)
 
 ---
 
