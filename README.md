@@ -224,7 +224,7 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
 
 ---
 
-### 🚧 Challenges Faced & Solutions
+## 🚧 Challenges Faced & Solutions
 
 - **Handling complex datasets**  
   → Broke down ingestion and processing into modular stages
@@ -274,19 +274,19 @@ To strengthen the existing AWS-based platform by adding analytics, encryption, g
 
 ## Phase 2 – Methodology
 
-Data Analysis – Use AWS Glue DataBrew to clean and standardize datasets, then execute SQL queries in Amazon Athena to uncover trends (e.g., employee count, business types, monthly growth).
+1. **Data Analysis** – Use AWS Glue DataBrew to clean and standardize datasets, then execute SQL queries in Amazon Athena to uncover trends (e.g., employee count, business types, monthly growth).
 
-Data Security – Apply AWS KMS encryption for all data stored in Amazon S3, enable bucket versioning, and manage access using IAM policies to ensure confidentiality and resilience.
+2. **Data Security** – Apply AWS KMS encryption for all data stored in Amazon S3, enable bucket versioning, and manage access using IAM policies to ensure confidentiality and resilience.
 
-Data Governance – Implement AWS Glue ETL checkpoints to validate data quality (completeness, uniqueness, freshness) and organize validated data into structured tables via AWS Glue Data Catalog.
+3. **Data Governance** – Implement AWS Glue ETL checkpoints to validate data quality (completeness, uniqueness, freshness) and organize validated data into structured tables via AWS Glue Data Catalog.
 
-Data Monitoring – Deploy Amazon CloudWatch dashboards and alarms to track system performance. Enable CloudTrail logging for user activity, ensuring visibility and accountability.
+4. **Data Monitoring** – Deploy Amazon CloudWatch dashboards and alarms to track system performance. Enable CloudTrail logging for user activity, ensuring visibility and accountability.
 
 ---
 
 ## Project Deliverables ##
 
-## 🧱 DAP Architecture – Phase 2 Enhancement
+### 🧱 DAP Architecture – Phase 2 Enhancement
 
 The diagram below illustrates the updated Data Analytics Platform with integrated analysis, encryption, governance, and monitoring features. It shows how AWS services interact to support secure, reliable, and governed data workflows.
 
@@ -294,7 +294,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 ## Step by Step Implementation ##
 
-## **Step 5: Data Analysis**
+### 6. Data Analysis
 
 - Cleaned and structured the 2024 business license data using **DataBrew** recipes.
 - Executed multiple SQL queries in **Amazon Athena** to uncover:
