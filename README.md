@@ -272,15 +272,15 @@ To strengthen the existing AWS-based platform by adding analytics, encryption, g
 
 ---
 
-## Phase 2 – Methodology
+## Phase 2 – Methodology (cont.phase 1)
 
-- **Data Analysis** – Use AWS Glue DataBrew to clean and standardize datasets, then execute SQL queries in Amazon Athena to uncover trends (e.g., employee count, business types, monthly growth).
+6. **Data Analysis** – Use AWS Glue DataBrew to clean and standardize datasets, then execute SQL queries in Amazon Athena to uncover trends (e.g., employee count, business types, monthly growth).
 
-- **Data Security** – Apply AWS KMS encryption for all data stored in Amazon S3, enable bucket versioning, and manage access using IAM policies to ensure confidentiality and resilience.
+7. **Data Security** – Apply AWS KMS encryption for all data stored in Amazon S3, enable bucket versioning, and manage access using IAM policies to ensure confidentiality and resilience.
 
-- **Data Governance** – Implement AWS Glue ETL checkpoints to validate data quality (completeness, uniqueness, freshness) and organize validated data into structured tables via AWS Glue Data Catalog.
+8. **Data Governance** – Implement AWS Glue ETL checkpoints to validate data quality (completeness, uniqueness, freshness) and organize validated data into structured tables via AWS Glue Data Catalog.
 
-- **Data Monitoring** – Deploy Amazon CloudWatch dashboards and alarms to track system performance. Enable CloudTrail logging for user activity, ensuring visibility and accountability.
+9. **Data Monitoring** – Deploy Amazon CloudWatch dashboards and alarms to track system performance. Enable CloudTrail logging for user activity, ensuring visibility and accountability.
 
 ---
 
@@ -292,7 +292,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 ---
 
-## Step by Step Implementation ##
+## Step by Step Implementation (cont.phase 1) ##
 
 ### 6. Data Analysis
 
