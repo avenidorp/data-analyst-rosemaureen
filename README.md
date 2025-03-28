@@ -364,7 +364,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 7.3 Raw bucket versioning enabled to preserve historical data and support recovery from unintended changes.
 
- ![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.3%20D-ANALYSIS.png)
+ ![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.2%20D-SECURITY.png)
 
 ---
 
@@ -398,7 +398,7 @@ The same process is repeated for curated and transformed buckets.
 
 8.3 ETL workflow uses conditional routing to separate valid and invalid records before final loading.
 
- ![Data Governance Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.3%20D-GOVERN.png)
+![Data Governance Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.2%20D-GOVERN.png)
 
 ---
 
@@ -417,7 +417,7 @@ The same process is repeated for curated and transformed buckets.
 
 9.2 CloudTrail logging enabled to track user activity and maintain audit trails for security and compliance.
 
- ![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.2%20D-MONITOR.png)
+ ![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
 
 ---
 
