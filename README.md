@@ -62,7 +62,7 @@ Integrated view of data ingestion, enrichment, and transformation processes, wit
 ![DAP System Architecture diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%200%20DAP%20PIC4.png)
 ![DAP System Architecture diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%200%20DAP%20PIC5.png)
 
-### Step by Step Implementation:
+## Step by Step Implementation:
 
 ## 1. Data Ingestion
 
@@ -277,6 +277,16 @@ To strengthen the existing AWS-based platform by adding analytics, encryption, g
 This phase was executed through four key stages, continuing from Phase 1. Below is a step-by-step breakdown of activities and improvements introduced.
 
 ---
+
+## Project Deliverables ##
+
+## 🧱 DAP Architecture – Phase 2 Enhancement
+
+The diagram below illustrates the updated Data Analytics Platform with integrated analysis, encryption, governance, and monitoring features. It shows how AWS services interact to support secure, reliable, and governed data workflows.
+
+---
+
+## Step by Step Implementation ##
 
 ### **Step 5: Data Analysis**
 
