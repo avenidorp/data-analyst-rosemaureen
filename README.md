@@ -288,7 +288,10 @@ To strengthen the existing AWS-based platform by adding analytics, encryption, g
 
 ### 🧱 DAP Architecture – Phase 2 Enhancement
 
-The diagram below illustrates the updated Data Analytics Platform with integrated analysis, encryption, governance, and monitoring features. It shows how AWS services interact to support secure, reliable, and governed data workflows.
+The diagram below illustrates the updated Data Analytics Platform with integrated analysis, encryption, governance, and monitoring features. It shows how AWS services interact to support secure, reliable, and governed data workflows by using key services such as AWS S3, Glue, Athena, CloudTrail, CloudWatch, and KMS.
+
+![DAP System Architecture diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20DAP%204.1.png)
+![DAP System Architecture diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20DAP%205.png)
 
 ---
 
@@ -302,6 +305,41 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
   - Top business sectors by license count
   - Trends in new license issuances over time
 - Provided aggregated views that support compliance reporting, operational planning, and economic assessments.
+
+6.1 Recipe jobs in AWS Glue DataBrew were successfully run to clean and prepare datasets for analysis.
+
+
+![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.1%20D-ANALYSIS.png)
+
+---
+
+6.2 Cleaned output from Glue jobs is stored in Amazon S3 in Parquet format, ready for querying.
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+
+---
+
+6.3 A CSV output of cleaned user data is stored in a separate S3 folder for further analysis.
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+
+---
+
+6.4 Athena query retrieves sample records from the summarized metrics table to verify data accuracy.
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+
+---
+
+6.5 Athena is used to calculate the overall average license fee per employee across all business entries.
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+
+---
+
+6.6 Athena query groups average number of employees by city, enabling regional comparison and insights.
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
 
 ---
 
