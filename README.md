@@ -352,13 +352,13 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 7.1 Customer-managed KMS key created to encrypt sensitive business license data across AWS services.
 
-![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.1%20D-ANALYSIS.png)
+![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.1%20D-SECURITY.png)
 
 ---
 
 7.2 S3 raw bucket configured with Customer-managed KMS key encryption to protect stored data from unauthorized access.
 
-![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.2%20D-ANALYSIS.png)
+![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.2%20D-SECURITY.png)
 
 ---
 
@@ -370,7 +370,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 7.4 Replication set up enabled in raw bucket to automatically duplicate data for durability and disaster recovery.
 
-![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.4%20D-ANALYSIS.png)
+![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.3%20D-SECURITY.png)
 
 The same process is repeated for curated and trasnsformed buckets.
 
