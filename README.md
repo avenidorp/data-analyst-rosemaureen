@@ -1,13 +1,13 @@
-## Project Title:
-AWS Data Analytic Platform for the City of Vancouver (Phase 1)
+## Project Title: AWS Data Analytic Platform for the City of Vancouver (Phase 1)
 
 ## Introduction
 
-This project addresses the challenge of managing and analyzing large volumes of business license data for the City of Vancouver. By leveraging Amazon Web Services (AWS), we designed a scalable and secure Data Analytics Platform (DAP) to improve decision-making, enhance service delivery, and support governance. The platform streamlines data ingestion, profiling, cleaning, cataloging, and summarization to deliver real-time, analysis-ready insights.
+This project outlines the design and implementation of a Data Analytics Platform (DAP) that will allow the City of Vancouver to analyze and manage business license data efficiently. The platform streamlines data ingestion, profiling, cleaning, cataloging, and summarization to deliver real-time, analysis-ready insight. The estimated monthly cost of running this platform on AWS was also computed to ensure financial feasibility and sustainability. 
+
 
 ## Problem Statement
 
-The City of Vancouver needs to migrate to AWS to analyze business license data. Existing tools lacked scalability, real-time insights, and integration across departments. Key challenges addressed:
+The City of Vancouver needs to migrate to AWS, a scalable, secure, and cost-efficient cloud solution to manage and analyze its growing business license data, replacing outdated systems that limit performance, data quality, and decision-making. Key challenges addressed:
 
 - Scattered data from various business license departments  
 - Lack of visibility for trends, compliance, and economic reporting  
@@ -20,12 +20,11 @@ To design and implement a scalable, cost-efficient AWS-based Data Analytics Plat
 
 Key AWS services and tools used in this implementation:
 
-- Amazon S3 – Scalable storage for raw and processed datasets  
-- AWS Glue – Data transformation, cleaning, and job orchestration  
-- AWS Glue DataBrew – No-code profiling and cleaning  
-- Amazon Athena – Serverless SQL querying on S3-stored data  
-- Amazon EC2 – Compute environment for workload execution  
-- AWS Elastic Beanstal* – Hosting for frontend log and data visualization apps  
+- Amazon S3 – Scalable object storage for raw, curated, and transformed datasets
+- AWS Glue – Code-based service for building and automating complex ETL workflows
+- AWS Glue DataBrew – Visual, no-code tool for quick data profiling and preparation   
+- Amazon EC2 – Virtual compute environment for running ingestion scripts and custom tasks
+- AWS Elastic Beanstalk – Hosting for frontend log and data visualization apps  
 
 ## Dataset:
 Business license 2024 datasets containing:
@@ -36,20 +35,15 @@ Business license 2024 datasets containing:
  
 ## Methodology:
 
-1. **Data Ingestion**  
-   - Collect raw datasets and store in Amazon S3.
+1. **Data Ingestion** - Collect raw datasets and store in Amazon S3.
    
-2. **Data Profiling**  
-   - Use AWS Glue DataBrew to detect inconsistencies, missing values, and data structure issues.
+2. **Data Profiling** - Use AWS Glue DataBrew to detect inconsistencies, missing values, and data structure issues.
 
-3. **Data Cleaning**  
-   - Handle duplicates and formatting errors using AWS Glue ETL.
+3. **Data Cleaning** - Handle duplicates and formatting errors using AWS Glue ETL.
 
-4. **Data Cataloging**  
-   - Organize metadata in AWS Glue Data Catalog for easy access via Athena or Redshift.
+4. **Data Cataloging** -Store and manage metadata in AWS Glue Data Catalog to enable easy data discovery and organization.
 
-5. **Data Summarization**  
-   - Aggregate key metrics (e.g., licenses issued by type, revenue, region) to extract insights.
+5. **Data Summarization** - Consolidate key metrics (e.g., licenses issued by type, revenue, region) to derive meaningful insights.
   
 ---
 
@@ -57,10 +51,16 @@ Business license 2024 datasets containing:
 
 ### 🧱 DAP (Data Analytic Platform) Design 
 
-To support the end-to-end data pipeline for business license analysis, a two-layer architecture was designed using AWS services. Below are two system diagrams that illustrate the infrastructure and data flow.
+To support end-to-end business license data analysis, a two-layer architecture was designed using AWS services. The following system diagrams illustrate the cloud infrastructure and data flow across the entire analytics pipeline.
 
 ![DAP System Architecture diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20DAP%201-2.png)
 ![DAP System Architecture diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20DAP%202-2.2.png)
+
+Integrated view of data ingestion, enrichment, and transformation processes, with detailed insights into cost analysis and dataset quality
+
+![DAP System Architecture diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%200%20DAP%20PIC3.png)
+![DAP System Architecture diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%200%20DAP%20PIC4.png)
+![DAP System Architecture diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%200%20DAP%20PIC5.png)
 
 ### Step by Step Implementation:
 
@@ -74,27 +74,27 @@ To support the end-to-end data pipeline for business license analysis, a two-lay
   - Data cleaning
   - Querying and analysis
 
-1.1 Shows the successful upload of `business-list.csv` to the S3 bucket.
-
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG1.1%20DATA%20INGESTION%20.png)
-
----
-
-1.2 Displays the `license-list.csv` upload to a similar S3 directory. 
-
-![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG1.2%20DATA%20INGESTION%20.png)
-
-----
-
-1.3 Shows the use of AWS CLI commands within PowerShell to upload the datasets directly to S3 buckets.
+1.1 AWS CLI commands within PowerShell to upload the datasets directly to S3 buckets.
 
 ![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG1.3%20DATA%20INGESTION%20.png)
 
 ---
 
+1.2 Successful upload of `business-list.csv` to the S3 bucket.
+
+![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG1.1%20DATA%20INGESTION%20.png)
+
+---
+
+1.3 Displays the `license-list.csv` upload to a similar S3 directory. 
+
+![Data Ingestion Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG1.2%20DATA%20INGESTION%20.png)
+
+---
+
 ## 2. Data Profiling
 
-- Used **AWS Glue DataBrew** to examine the structure and quality of ingested datasets.
+- Utilized **AWS Glue DataBrew** to examine the structure and quality of ingested datasets.
 - Analyzed three datasets: business list, license list, and location list.
 - Key profiling outputs:
   - Total rows, columns, and data types
@@ -108,7 +108,7 @@ To support the end-to-end data pipeline for business license analysis, a two-lay
 
 ---
 
-2.2 Displays completed DataBrew profile jobs showing datasets, status, and timestamps.
+2.2 Successful execution of AWS Glue DataBrew profile jobs for Business Licenses 2024 datasets (bus-lst, lic-lst, and loc-lst).
 
 ![Data Profiling Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG2.2%20DATA%20PROFILING%20.png)
 
@@ -132,27 +132,27 @@ To support the end-to-end data pipeline for business license analysis, a two-lay
 
 ## 3. Data Cleaning
 
-- Used **AWS Glue and AWS Glue DataBrew** to clean and prepare datasets for analysis.
+- Applied **AWS Glue and AWS Glue DataBrew** to clean and prepare datasets for analysis.
 - Performed key cleaning operations:
   - Removed duplicate records
-  - Handled missing values using imputation or removal
+  - Handled missing values using imputation, removal or replacing with nulls
   - Standardized column formats (e.g., dates, text case)
 - Ensured consistency and accuracy across business list, license list, and location list datasets.
 - Saved the cleaned outputs to Amazon S3 for further processing and cataloging.
 
-3.1 List of recipe jobs with input data, outputs, and run status.
+3.1 Successful execution of AWS Glue DataBrew recipe jobs for transforming Business Licenses 2024 datasets.
 
 ![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.1%20DATA%20CLEANING%20.png)
 
 ---
 
-3.2 S3 lifecycle rules enabled to transition data to Glacier storage.
+3.2 S3 lifecycle rules enabled to transition data to Glacier storage, reducing costs while preserving long-term data retention.
 
 ![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.2%20DATA%20CLEANING%20.png)
 
 ---
 
-3.3 IIS log file showing recorded user activity on the server. 
+3.3 IIS log file generated on EC2 instance capturing web access activity, useful for monitoring usage patterns and detecting potential security issues.
 
 ![Data Cleaning Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG3.3%20DATA%20CLEANING.png)
 
@@ -192,7 +192,7 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
   - Business distribution by location
   - Fee-related trends and totals
 - Joined datasets to support cross-analysis (e.g., licenses by region and employee count).
-- Output stored in Amazon S3 for visualization or querying via Athena and QuickSight.
+- Output stored in Amazon S3 for visualization 
 - Supports informed decision-making and performance tracking for city operations.
 
 5.1 Shows output folders created for each business type after summarization in S3.
@@ -212,7 +212,7 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
 
 ---
 
-5.4 Glue Data Catalog tables were created to organize summarized outputs, allowing structured queries and integration with BI tools.
+5.4 Glue Data Catalog tables were created to organize summarized outputs, allowing structured queries and integration with reporting and analytics platforms.
   
 ![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.10%20DATA%20SUMMARIZATION-TABLES%20IN%20GLUE%20.png)
 
@@ -242,7 +242,7 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
 
 ## Conclusion
 
-Phase 1 successfully delivered a scalable and automated AWS-based data platform for business license analytics. By transforming raw records into structured insights, the City of Vancouver can now track licensing trends, improve transparency, and plan services more efficiently. With core infrastructure in place, the next phases can expand into predictive analytics, reporting automation, and broader departmental integration.
+Phase 1 successfully delivered a scalable and automated AWS-based data platform for business license analytics. With successful transformation of raw records into structured insights, the City of Vancouver can now track licensing trends and plan services more efficiently. With core infrastructure in place, the next phases is to safeguard data and strengthen system integrity to ensure the platform remains reliable, compliant, and prepared for future growth.
 
 ---
 ## Course Completion Badge
