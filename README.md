@@ -64,7 +64,7 @@ Integrated view of data ingestion, enrichment, and transformation processes, wit
 
 ## Step by Step Implementation:
 
-## 1. Data Ingestion
+### 1. Data Ingestion
 
 - Initiated the AWS analytics pipeline with structured data ingestion.
 - Uploaded raw business license datasets into **Amazon S3**.
@@ -92,7 +92,7 @@ Integrated view of data ingestion, enrichment, and transformation processes, wit
 
 ---
 
-## 2. Data Profiling
+### 2. Data Profiling
 
 - Utilized **AWS Glue DataBrew** to examine the structure and quality of ingested datasets.
 - Analyzed three datasets: business list, license list, and location list.
@@ -130,7 +130,7 @@ Integrated view of data ingestion, enrichment, and transformation processes, wit
 
 ---
 
-## 3. Data Cleaning
+### 3. Data Cleaning
 
 - Applied **AWS Glue and AWS Glue DataBrew** to clean and prepare datasets for analysis.
 - Performed key cleaning operations:
@@ -170,7 +170,7 @@ Integrated view of data ingestion, enrichment, and transformation processes, wit
 
 ---
 
-## 4. Data Cataloging
+### 4. Data Cataloging
 
 - Used **AWS Glue Data Catalog** to register and organize cleaned datasets.
 - Created metadata tables for business, license, and location datasets.
@@ -184,7 +184,7 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
 
 ---
 
-## 5. Data Summarization
+### 5. Data Summarization
 
 - Aggregated cleaned datasets to generate key insights using **AWS Glue jobs**.
 - Created summaries for:
@@ -224,7 +224,7 @@ A Glue Data Catalog showing registered tables, enabling easy data discovery and 
 
 ---
 
-## 🚧 Challenges Faced & Solutions
+### 🚧 Challenges Faced & Solutions
 
 - **Handling complex datasets**  
   → Broke down ingestion and processing into modular stages
@@ -274,7 +274,13 @@ To strengthen the existing AWS-based platform by adding analytics, encryption, g
 
 ## Phase 2 – Methodology
 
-This phase was executed through four key stages, continuing from Phase 1. Below is a step-by-step breakdown of activities and improvements introduced.
+Data Analysis – Use AWS Glue DataBrew to clean and standardize datasets, then execute SQL queries in Amazon Athena to uncover trends (e.g., employee count, business types, monthly growth).
+
+Data Security – Apply AWS KMS encryption for all data stored in Amazon S3, enable bucket versioning, and manage access using IAM policies to ensure confidentiality and resilience.
+
+Data Governance – Implement AWS Glue ETL checkpoints to validate data quality (completeness, uniqueness, freshness) and organize validated data into structured tables via AWS Glue Data Catalog.
+
+Data Monitoring – Deploy Amazon CloudWatch dashboards and alarms to track system performance. Enable CloudTrail logging for user activity, ensuring visibility and accountability.
 
 ---
 
@@ -288,7 +294,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 ## Step by Step Implementation ##
 
-### **Step 5: Data Analysis**
+## **Step 5: Data Analysis**
 
 - Cleaned and structured the 2024 business license data using **DataBrew** recipes.
 - Executed multiple SQL queries in **Amazon Athena** to uncover:
@@ -299,7 +305,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 ---
 
-### **Step 6: Data Security**
+## **Step 6: Data Security**
 
 - Activated **KMS encryption** for all S3 buckets storing raw and transformed data.
 - Enforced **S3 bucket versioning** to preserve data history and recovery options.
@@ -308,7 +314,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 ---
 
-### **Step 7: Data Governance**
+## **Step 7: Data Governance**
 
 - Implemented ETL checkpoints that filter and route high-quality data to “Passed” zones in S3.
 - Used **AWS Glue** to validate data types, null counts, uniqueness, and freshness.
