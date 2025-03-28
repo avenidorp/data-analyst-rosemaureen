@@ -305,7 +305,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 ---
 
-## **Step 6: Data Security**
+## 7. Data Security
 
 - Activated **KMS encryption** for all S3 buckets storing raw and transformed data.
 - Enforced **S3 bucket versioning** to preserve data history and recovery options.
@@ -314,7 +314,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 ---
 
-## **Step 7: Data Governance**
+## 8. Data Governance
 
 - Implemented ETL checkpoints that filter and route high-quality data to “Passed” zones in S3.
 - Used **AWS Glue** to validate data types, null counts, uniqueness, and freshness.
@@ -323,7 +323,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 ---
 
-### **Step 8: Data Monitoring**
+### 9. Data Monitoring
 
 - Deployed **CloudWatch dashboards** to monitor Glue job metrics and S3 activity.
 - Configured **CloudWatch Alarms** with SNS to alert stakeholders of resource thresholds (e.g., storage spikes, job failures).
