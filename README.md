@@ -1,4 +1,4 @@
-## Project Title: AWS Data Analytic Platform for the City of Vancouver (Phase 1)
+# Project Title: AWS Data Analytic Platform for the City of Vancouver (Phase 1)
 
 ## Introduction
 
