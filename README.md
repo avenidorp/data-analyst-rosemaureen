@@ -1,4 +1,4 @@
-# Project 1 Title: AWS Data Analytic Platform for the City of Vancouver (Phase 1)
+# Project Title: AWS Data Analytic Platform for the City of Vancouver (Phase 1)
 
 ## Introduction
 
@@ -246,7 +246,7 @@ Phase 1 successfully delivered a scalable and automated AWS-based data platform 
 
 ---
 
-# Project 2 Title: AWS Data Analytics Platform for the City of Vancouver (Phase 2)
+# Project Title: AWS Data Analytics Platform for the City of Vancouver (Phase 2)
 
 ## Introduction
 
@@ -254,13 +254,13 @@ Phase 2 builds on the foundation of the City of Vancouver’s AWS Data Analytics
 
 ---
 
-## Objective
+## Objective:
 
 To strengthen the existing AWS-based platform by adding analytics, encryption, governance, and monitoring features—allowing the City of Vancouver to securely manage and analyze business license data while ensuring data quality, performance, and visibility.
 
 ---
 
-## Tools and Technologies Used
+## Tools and Technologies:
 
 - **Amazon S3** – Tiered data storage for raw, cleaned, and summarized datasets  
 - **AWS Glue & DataBrew** – ETL pipeline creation, cleaning logic, and profiling  
@@ -274,13 +274,13 @@ To strengthen the existing AWS-based platform by adding analytics, encryption, g
 
 ## Phase 2 – Methodology
 
-1. **Data Analysis** – Use AWS Glue DataBrew to clean and standardize datasets, then execute SQL queries in Amazon Athena to uncover trends (e.g., employee count, business types, monthly growth).
+- **Data Analysis** – Use AWS Glue DataBrew to clean and standardize datasets, then execute SQL queries in Amazon Athena to uncover trends (e.g., employee count, business types, monthly growth).
 
-2. **Data Security** – Apply AWS KMS encryption for all data stored in Amazon S3, enable bucket versioning, and manage access using IAM policies to ensure confidentiality and resilience.
+- **Data Security** – Apply AWS KMS encryption for all data stored in Amazon S3, enable bucket versioning, and manage access using IAM policies to ensure confidentiality and resilience.
 
-3. **Data Governance** – Implement AWS Glue ETL checkpoints to validate data quality (completeness, uniqueness, freshness) and organize validated data into structured tables via AWS Glue Data Catalog.
+- **Data Governance** – Implement AWS Glue ETL checkpoints to validate data quality (completeness, uniqueness, freshness) and organize validated data into structured tables via AWS Glue Data Catalog.
 
-4. **Data Monitoring** – Deploy Amazon CloudWatch dashboards and alarms to track system performance. Enable CloudTrail logging for user activity, ensuring visibility and accountability.
+- **Data Monitoring** – Deploy Amazon CloudWatch dashboards and alarms to track system performance. Enable CloudTrail logging for user activity, ensuring visibility and accountability.
 
 ---
 
