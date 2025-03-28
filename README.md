@@ -315,31 +315,30 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 6.2 Cleaned output from Glue jobs is stored in Amazon S3 in Parquet format, ready for querying.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
-
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.2%20D-ANALYSIS.png)
 ---
 
 6.3 A CSV output of cleaned user data is stored in a separate S3 folder for further analysis.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.3%20D-ANALYSIS.png)
 
 ---
 
 6.4 Athena query retrieves sample records from the summarized metrics table to verify data accuracy.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.4%20D-ANALYSIS.png)
 
 ---
 
 6.5 Athena is used to calculate the overall average license fee per employee across all business entries.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.5%20D-ANALYSIS.png)
 
 ---
 
 6.6 Athena query groups average number of employees by city, enabling regional comparison and insights.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/PP1%20FIG5.1%20DATA%20SUMMARIZATION-BSN%20LIST%20.png)
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.6%20D-ANALYSIS.png)
 
 ---
 
