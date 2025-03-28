@@ -315,18 +315,18 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 6.2 Cleaned output from Glue jobs is stored in Amazon S3 in Parquet format, ready for querying.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.2%20D-ANALYSIS.png)
+![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.2%20D-ANALYSIS.png)
 ---
 
 6.3 A CSV output of cleaned user data is stored in a separate S3 folder for further analysis.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.3%20D-ANALYSIS.png)
+![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.3%20D-ANALYSIS.png)
 
 ---
 
 6.4 Athena query retrieves sample records from the summarized metrics table to verify data accuracy.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.4%20D-ANALYSIS.png)
+![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.4%20D-ANALYSIS.png)
 
 ---
 
@@ -338,7 +338,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 6.6 Athena query groups average number of employees by city, enabling regional comparison and insights.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.6%20D-ANALYSIS.png)
+![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.6%20D-ANALYSIS.png)
 
 ---
 
