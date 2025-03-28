@@ -352,25 +352,25 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 7.1 Customer-managed KMS key created to encrypt sensitive business license data across AWS services.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.1%20D-ANALYSIS.png)
+![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.1%20D-ANALYSIS.png)
 
 ---
 
 7.2 S3 raw bucket configured with Customer-managed KMS key encryption to protect stored data from unauthorized access.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.2%20D-ANALYSIS.png)
+![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.2%20D-ANALYSIS.png)
 
 ---
 
 7.3 Raw bucket versioning enabled to preserve historical data and support recovery from unintended changes.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.3%20D-ANALYSIS.png)
+![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.3%20D-ANALYSIS.png)
 
 ---
 
 7.4 Replication set up enabled in raw bucket to automatically duplicate data for durability and disaster recovery.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.4%20D-ANALYSIS.png)
+![Data Security Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.4%20D-ANALYSIS.png)
 
 The same process is repeated for curated and trasnsformed buckets.
 
@@ -378,28 +378,30 @@ The same process is repeated for curated and trasnsformed buckets.
 
 ### 8. Data Governance
 
-- Implemented ETL checkpoints that filter and route high-quality data to “Passed” zones in S3.
-- Used **AWS Glue** to validate data types, null counts, uniqueness, and freshness.
-- Created dynamic **partitioned tables** in AWS Glue Data Catalog for query optimization.
-- Ensured repeatability and transparency in data validation for audit-readiness and compliance.
+- Implemented ETL checkpoints to separate records based on quality.
+- Used AWS Glue to check for completeness, uniqueness, and freshness.
+- Routed valid records to a “Passed” S3 folder and failed ones to a “Failed” folder.
+- Organized clean data into partitioned tables in AWS Glue Data Catalog for faster querying.
+- Ensured consistent and transparent validation for audit and compliance readiness.
 
-8.1 sample
+8.1 High-quality records were routed to the “Passed” folder after meeting data validation rules.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.1%20D-GOVERN.png)
-
----
-
-8.2 sample
-
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.2%20D-GOVERN.png)
+![Data Governance Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.1%20D-GOVERN.png)
 
 ---
 
-8.3 sample
+8.2 Records that failed quality checks were stored in the “Failed” folder for audit transparency.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.3%20D-GOVERN.png)
+![Data Governance Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.2%20D-GOVERN.png)
 
 ---
+
+8.3 ETL workflow uses conditional routing to separate valid and invalid records before final loading.
+
+![Data Governance Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.3%20D-GOVERN.png)
+
+---
+
 ### 9. Data Monitoring
 
 - Deployed **CloudWatch dashboards** to monitor Glue job metrics and S3 activity.
@@ -407,13 +409,13 @@ The same process is repeated for curated and trasnsformed buckets.
 - Enabled **AWS CloudTrail** for full visibility into user interactions and access events.
 - Supported continuous performance tuning and early detection of operational issues.
 
-9. sample
+9.1 CloudWatch dashboard monitors S3 bucket size and resource usage to support performance tracking and capacity planning.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
+![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
 
-9. sample
+9.2 CloudTrail logging enabled to track user activity and maintain audit trails for security and compliance.
 
-![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
+![Data Monitoring Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
 
 ---
 
@@ -428,29 +430,22 @@ The same process is repeated for curated and trasnsformed buckets.
 
 ## 🔍 Evaluation Highlights:
 
-### ✅ Key Accomplishments
-
 - Delivered deeper analytical insights using Athena and DataBrew
 - Strengthened data protection with encryption and access controls
 - Established data quality checkpoints and routing logic
 - Enabled real-time monitoring with alerting for proactive issue management  
 
-### ⚠️ Areas for improvement
-- Refine IAM policies for more granular access control  
-- Implement schema evolution and disaster recovery playbooks  
-- Add documentation for Glue transformations and job parameters  
-
 ---
 
 ## Conclusion
 
-Phase 2 significantly enhances the City of Vancouver’s AWS Data Analytics Platform by introducing intelligence, automation, and governance. These upgrades not only ensure data is trustworthy and secure but also enable real-time visibility and performance tracking. The resulting architecture is agile, policy-driven, and optimized for growth—empowering the city to make informed decisions and uphold transparency in managing business license operations.
+Phase 2 strengthens the City of Vancouver’s AWS Data Analytics Platform by adding automation, governance, and monitoring. It ensures data is secure, reliable, and easy to track in real time. The improved system supports smarter decision-making and transparency in managing business license operations.
 
 ---
 
-## Course Completion Badge
+## 🎖️ Course Completion Badge
 
-🎖️ Earned the **AWS Academy Cloud Foundations** badge, demonstrating foundational knowledge in AWS Cloud, Architecture, Core Services, Pricing, and Support.  
+Earned the **AWS Academy Cloud Foundations** badge, demonstrating foundational knowledge in AWS Cloud, Architecture, Core Services, Pricing, and Support.  
 Issued by AWS Academy on March 26, 2025.
 
 ![Course Completion Badge Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/AWS%20BADGE%20WITH%20SKILLS.png)
