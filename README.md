@@ -316,6 +316,7 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 6.2 Cleaned output from Glue jobs is stored in Amazon S3 in Parquet format, ready for querying.
 
 ![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.2%20D-ANALYSIS.png)
+
 ---
 
 6.3 A CSV output of cleaned user data is stored in a separate S3 folder for further analysis.
@@ -324,19 +325,19 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 
 ---
 
-6.4 Athena query retrieves sample records from the summarized metrics table to verify data accuracy.
+6.4 Athena query calculates Business Question 1: Retrieve the average number of employees across all businesses.
 
 ![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.4%20D-ANALYSIS.png)
 
 ---
 
-6.5 Athena is used to calculate the overall average license fee per employee across all business entries.
+6.5 Athena query answers Business Question 2: Compute the overall average number of employees across all businesses.
 
 ![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.5%20D-ANALYSIS.png)
 
 ---
 
-6.6 Athena query groups average number of employees by city, enabling regional comparison and insights.
+6.6 Athena query answers Business Question 3: Display the average number of employees by city for comparison.
 
 ![Data Analysis Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG5.6%20D-ANALYSIS.png)
 
@@ -349,6 +350,30 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 - Established **IAM roles and permissions** for secure access between Glue jobs, Athena, and user groups.
 - Created security controls to prevent unauthorized data manipulation, ensuring public trust.
 
+7.1 Customer-managed KMS key created to encrypt sensitive business license data across AWS services.
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.1%20D-ANALYSIS.png)
+
+---
+
+7.2 S3 raw bucket configured with Customer-managed KMS key encryption to protect stored data from unauthorized access.
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.2%20D-ANALYSIS.png)
+
+---
+
+7.3 Raw bucket versioning enabled to preserve historical data and support recovery from unintended changes.
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.3%20D-ANALYSIS.png)
+
+---
+
+7.4 Replication set up enabled in raw bucket to automatically duplicate data for durability and disaster recovery.
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG6.4%20D-ANALYSIS.png)
+
+The same process is repeated for curated and trasnsformed buckets.
+
 ---
 
 ### 8. Data Governance
@@ -358,14 +383,37 @@ The diagram below illustrates the updated Data Analytics Platform with integrate
 - Created dynamic **partitioned tables** in AWS Glue Data Catalog for query optimization.
 - Ensured repeatability and transparency in data validation for audit-readiness and compliance.
 
+8.1 sample
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.1%20D-GOVERN.png)
+
 ---
 
+8.2 sample
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.2%20D-GOVERN.png)
+
+---
+
+8.3 sample
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG7.3%20D-GOVERN.png)
+
+---
 ### 9. Data Monitoring
 
 - Deployed **CloudWatch dashboards** to monitor Glue job metrics and S3 activity.
 - Configured **CloudWatch Alarms** with SNS to alert stakeholders of resource thresholds (e.g., storage spikes, job failures).
 - Enabled **AWS CloudTrail** for full visibility into user interactions and access events.
 - Supported continuous performance tuning and early detection of operational issues.
+
+9. sample
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
+
+9. sample
+
+![Data Summarization Diagram](https://raw.githubusercontent.com/avenidorp/data-analyst-rosemaureen/main/Project%202%20visuals/P2%20FIG8.1%20D-MONITOR.png)
 
 ---
 
